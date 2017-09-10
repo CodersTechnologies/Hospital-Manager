@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="18" bottomMargin="7" uuid="09c01996-b8e9-438a-8226-e9bed1210c59">
+	<property name="ireport.zoom" value="1.4641000000000102"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="546"/>
+	<queryString>
+		<![CDATA[Select * from opd;]]>
+	</queryString>
+	<field name="opd_ID" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="opd_Name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="opd_BloodGroup" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="opd_MaritalStatus" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="opd_DOB" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="opd_Gender" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="opd_KinsName" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="opd_Address" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="opd_City" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="opd_State" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="opd_Pin" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="opd_Contact" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="opd_Email" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="opd_KinsContact" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="opd_ConsultDept" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="opd_Consultant" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="opd_RegDate" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="opd_RegTime" class="java.sql.Time">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="123"/>
+	</title>
+	<detail>
+		<band height="566" splitType="Stretch">
+			<staticText>
+				<reportElement x="6" y="23" width="82" height="14" uuid="b35cb548-9274-4873-89f4-e70c8765003b"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[OPD ID :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="88" y="23" width="100" height="14" uuid="6a76da84-e5fc-4e30-aeee-0df59f9d99b8"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{opd_ID}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="6" y="37" width="82" height="14" uuid="f41ce7c5-d314-4b58-943b-6a6c2885e294"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Patient Name :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="88" y="37" width="100" height="14" uuid="c4f27f07-7f9a-40da-b90e-c7000a7e5775"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{opd_Name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="6" y="51" width="82" height="13" uuid="f3736349-d8f3-4ceb-99cb-48f8b85e8a03"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Blood Group :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="88" y="51" width="100" height="13" uuid="79fcc2a2-92a7-482c-ba27-d117a7ff48a1"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{opd_BloodGroup}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="192" y="23" width="83" height="14" uuid="c222b85b-b3a7-4d60-91d7-a07f2e297bb1"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Marital Status :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="275" y="23" width="100" height="14" uuid="45d4e539-422c-4fb4-b69e-1b2e7c77e93f"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{opd_MaritalStatus}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="192" y="37" width="83" height="14" uuid="78846003-c326-47df-a0c2-472b11ff8acf"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Date of Birth :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="275" y="37" width="100" height="14" uuid="18a73f17-a1c2-4d4f-a913-3ae869c7ebfe"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{opd_DOB}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="192" y="51" width="83" height="13" uuid="1563149f-bcb1-4953-b70f-8e627087be82"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Gender :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="275" y="51" width="100" height="13" uuid="b0bdf5a1-c7fb-48b1-9efa-29947bf10078"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{opd_Gender}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="375" y="23" width="75" height="14" uuid="1e24915b-6f7d-4fe6-ba7b-deb0f19579c5"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Consult Dept. :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="450" y="23" width="100" height="14" uuid="dc4ac88f-6f74-4889-8259-9864f23d25a0"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{opd_ConsultDept}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="375" y="37" width="75" height="14" uuid="7225ae67-bfb1-48d2-b383-7af1e59be3bf"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Consultant :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="450" y="37" width="100" height="14" uuid="728bc190-65df-494b-b44b-d6edf839421d"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{opd_Consultant}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="66" width="555" height="1" uuid="47f8be14-0683-4b45-a93c-63f5529925a3"/>
+				<graphicElement>
+					<pen lineWidth="3.0" lineStyle="Double"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="375" y="51" width="75" height="13" uuid="0928c046-1088-421d-b7d0-d9b179f12db5"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Date :]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="450" y="51" width="100" height="13" uuid="74eb3024-5e58-4180-9e09-cad73bc02d12"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="20" uuid="f0fc725f-e8c2-4391-af00-62c75276bbe8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[OPD CONSULTATION SHEET]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="20" width="555" height="1" uuid="11920f02-5e84-4ca5-b447-a20b909c1f9a"/>
+			</line>
+			<staticText>
+				<reportElement x="430" y="540" width="120" height="13" uuid="3ccc3dc1-bef3-4224-943b-1525023dcd2e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[(Stamp)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="430" y="553" width="120" height="13" uuid="2c38aabe-adba-428f-a279-bcff73d3411b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Doctor's Signature]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="460" y="4" width="95" height="12" uuid="9f5f2cfe-9063-4ff2-8b71-e2660107c33f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="3" width="555" height="1" uuid="0ed77517-11f4-4a5b-b81f-b558960fe5d4"/>
+			</line>
+			<staticText>
+				<reportElement x="1" y="4" width="137" height="12" uuid="fae4a2a3-5d22-4fbb-9893-b2d28e9c7a60"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<text><![CDATA[Hospital Manager Ver.1.0]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>
